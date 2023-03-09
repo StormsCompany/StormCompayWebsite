@@ -1,9 +1,6 @@
-# DEPLOYMENT PATH TO CPANEL
 ---
 deployment:
   tasks:
     - export DEPLOYPATH=/home/stormsco/StormsCompany
     - /bin/cp -r * $DEPLOYPATH #copy all from root
-    - /bin/cp ./public/assets/css/* /home/stormsco/public_html/assets/css
-    - /bin/cp ./public/assets/js/* /home/stormsco/public_html/assets/js
-    - /bin/cp ./public/assets/images/* /home/stormsco/public_html/assets/images
+    - /bin/cp -R ./public/* /home/stormsco/public_html/
