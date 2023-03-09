@@ -318,7 +318,7 @@ button {
 .Shows_text{
     width: 100%;
     float: left;
-    font-size: 50px;
+    font-size: 30px;
     color: #ffffff;
     font-weight: bold;
 }
@@ -484,12 +484,12 @@ button {
 }
 .about_section{
     width: 100%;
-    float: left; 
+    float: left;
     background-image: url(../images/about-bg.png);
     height: auto;
     background-repeat: no-repeat;
-    background-size: cover; 
-    padding-bottom: 60px;  
+    background-size: cover;
+    padding-bottom: 60px;
 }
 
 .image_2{
