@@ -246,7 +246,6 @@
         </div>
     </div>
     <!-- product section end -->
-    <!-- contact section start -->
     <div class="contact_section layout_padding">
         <div class="container">
             <h1 class="check_text">Check ability to connect our services in your area</h1>
