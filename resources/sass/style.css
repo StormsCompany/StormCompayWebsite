@@ -15,6 +15,18 @@
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(css/font-awesome.min.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(swiper.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
@@ -40,7 +52,11 @@ body {
     width: 100%;
 }
 
-
+.wrapper {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
 
 a {
     color: #1f1f1f;
@@ -428,123 +444,6 @@ button {
     margin: 5px;
 }
 .box_main.active {
-    background-color: #ffffff;
-}
-
-.box_values {
-    width: 100%;
-    float: left;
-    background-color: #bcbbbe;
-    border: #3f1599;
-    border-radius: 10px;
-    height: min-content;
-    min-height: 400px;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 30px;
-    margin: 10px;
-    color: rgb(48, 10, 238);
-    font-size: 700rem !important;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.box_values:hover {
-    background-color: #2618ca;
-    overflow: hidden;
-    transform: scale(1.05);
-    margin: 5px;
-    color: white;
-}
-
-
-.values_title {
-    width: 100%;
-    float: left;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0b0b0c;
-    text-align: center;
-    font-weight: 600;
-    padding-top: 15px;
-}
-
-.values_text {
-    width: 100%;
-    float: left;
-    font-size: 24px;
-    color: black;
-    text-align: center;
-    font-weight: 600;
-    padding-top: 15px;
-}
-
-.box_values.active {
-    background-color: #ffffff;
-}
-
-
-
-.box_clients {
-    width: 100%;
-    float: left;
-    background-color: #f7f1f1;
-    border: #5021b4;
-    border-radius: 10px;
-    height: min-content;
-    max-height: fit-content;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 30px;
-    height: 200px;
-    margin: 10px;
-    color: rgb(48, 10, 238);
-    font-size: 250rem !important;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.box_clients:hover {
-    background-color: #2618ca;
-    overflow: hidden;
-    transform: scale(1.05);
-    margin: 5px;
-    height: 200px;
-    color: white;
-}
-
-.images_client {
-    width: 70%;
-    background-size: cover;
-    height:  85%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: auto;
-}
-
-
-.clients_title {
-    width: 100%;
-    float: left;
-    font-size: 30px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #0b0b0c;
-    text-align: center;
-    font-weight: 600rem;
-    padding-top: 15px;
-}
-
-.clients_text {
-    width: 100%;
-    float: left;
-    font-size: 24px;
-    color: black;
-    text-align: center;
-    font-weight: 350rem;
-    padding-top: 15px;
-}
-
-.box_clients.active {
     background-color: #ffffff;
 }
 
