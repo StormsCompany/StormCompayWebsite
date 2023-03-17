@@ -203,7 +203,7 @@
 								</div>
 				</div>
 				<hr>
-                <!--Values start -->
+				<!--Values start -->
 				<div class="row row-text well m-4 p-4" data-aos="zoom-in" id="values">
 								<p class="live_text">Our Values</p>
 								<p class="values_text">
@@ -316,7 +316,7 @@
 				</div>
 				<!--community impact section end -->
 
-				<hr>
+				{{--  <hr>  --}}
 				<!-- contact section  -->
 				<div data-aos="zoom-in" class="contact_section layout_padding">
 								<div class="container">
@@ -341,7 +341,7 @@
 				</div>
 				<!-- contact section end -->
 				<!-- client section start -->
-				<div class="client_section layout_padding mt-3 bg-info" id="clients">
+				<div class="client_section layout_padding mt-3" id="clients">
 								<div class="container">
 												<h1 class="client_taital">What our clients say</h1>
 
@@ -352,7 +352,8 @@
 																												<div class="row justify-content-center layout_padding">
 																																<div class="col-sm-3 col-md-3 col-xl-3">
 																																				<div class="client_image">
-																																								<img class="rounded-circle w-100 mr-auto" src="https://media.licdn.com/dms/image/C4D03AQEmJsv3UHQ4xQ/profile-displayphoto-shrink_800_800/0/1636400154887?e=1684368000&v=beta&t=BI2nXI2pcno1c_6UE1y2LzhVJ0ZgN6d7gZcOSYPnTIg" />
+																																								<img class="rounded-circle w-100 mr-auto"
+																																												src="https://media.licdn.com/dms/image/C4D03AQEmJsv3UHQ4xQ/profile-displayphoto-shrink_800_800/0/1636400154887?e=1684368000&v=beta&t=BI2nXI2pcno1c_6UE1y2LzhVJ0ZgN6d7gZcOSYPnTIg" />
 																																				</div>
 																																</div>
 																																<div class="col-md-6 col-xl-6">
@@ -375,7 +376,8 @@
 																												<div class="row justify-content-center layout_padding" data-aos="zoom-in">
 																																<div class="col-md-3 col-xl-3">
 																																				<div class="client_image">
-																																								<img class="rounded-circle w-100 mr-auto"  src="https://kiplangatsang.storms.co.ke/img/profile.jpg" />
+																																								<img class="rounded-circle w-100 mr-auto"
+																																												src="https://kiplangatsang.storms.co.ke/img/profile.jpg" />
 																																				</div>
 																																</div>
 																																<div class="col-md-6">
@@ -399,7 +401,8 @@
 																												<div class="row justify-content-center layout_padding" data-aos="flip-up">
 																																<div class="col-md-3 col-xl-3">
 																																				<div class="client_image">
-																																								<img class="rounded-circle w-100 mr-auto" src="{{ asset('assets/images/MtAa.png') }}" />
+																																								<img class="rounded-circle w-100 mr-auto"
+																																												src="{{ asset('assets/images/MtAa.png') }}" />
 																																				</div>
 																																</div>
 																																<div class="col-md-6">
@@ -425,11 +428,15 @@
 								</div>
 				</div>
 				<!-- client section end -->
-
+				<hr>
 
 				<!-- address section start -->
 				<div class="contact_us_section layout_padding" id="contact">
 								<div class="container">
+                                    <div class="row">
+                                        <p class="section_title display-6">Our team is always ready to support. </p>
+                                        <p class="section_title display-7"> Drop a message or visit our office.</p>
+                                    </div>
 												<div class="row layout_padding">
 																<div class="col-md-6 col-xl m-2 contact_box">
 																				<div class="col-sm">
@@ -490,7 +497,7 @@
 								</div>
 				</div>
 				<!--  address section end -->
-
+				<hr>
 				<!-- address section start -->
 				<div class="contact_us_section layout_padding" id="contact_info">
 								<div class="container">

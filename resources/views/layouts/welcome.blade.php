@@ -68,22 +68,22 @@
 																								<a class="nav-link" href="#contact">Contact us</a>
 																				</li>
 																</ul>
-																<form class="form-inline my-2 my-lg-0">
-																				<button class="btn btn-outline-success my-sm-0">
+																<form class=" my-2 my-lg-0">
+																				<button class="btn btn-outline-success my-2 my-sm-0">
 																							<a href="#about">GET STARTED</a>
 																				</button>
 																</form>
-																<div class="search_icon">
+																<div class="form-inline search_icon">
 																				<ul>
 																								<li>
-																												<a href="{{ route('login') }}"><img src="{{ asset('assets/images/user-icon.png') }}" /></a>
+																												<a href="{{ route('login') }}"><img src="{{ asset('assets/images/user-icon.png') }}" /><tb>&ensp;Account</a>
 																								</li>
-																								<li>
+																								{{--  <li>
 																												<a href="#"><img src="{{ asset('assets/images/bag-icon.png') }}" /></a>
 																								</li>
 																								<li>
 																												<a href="#"><img src="{{ asset('assets/images/search-icon.png') }}" /></a>
-																								</li>
+																								</li>  --}}
 																				</ul>
 																</div>
 												</div>
