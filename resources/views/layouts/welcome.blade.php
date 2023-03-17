@@ -69,15 +69,14 @@
 																				</li>
 																</ul>
 																<form class="form-inline my-2 my-lg-0">
-																				<button href="#" class="btn btn-outline-success my-2 my-sm-0" type="submit">
-																								GET STARTED
+																				<button class="btn btn-outline-success my-sm-0">
+																							<a href="#about">GET STARTED</a>
 																				</button>
 																</form>
 																<div class="search_icon">
 																				<ul>
 																								<li>
-																												<a href="{{ route('login') }}"><img
-																																				src="{{ asset('assets/images/user-icon.png') }}" /></a>
+																												<a href="{{ route('login') }}"><img src="{{ asset('assets/images/user-icon.png') }}" /></a>
 																								</li>
 																								<li>
 																												<a href="#"><img src="{{ asset('assets/images/bag-icon.png') }}" /></a>
@@ -112,15 +111,14 @@
 																																								Integration softwares, Mobile Applications and
 																																								E-commerce Websites ...
 																																				</p>
+
 																																				<div class="start_bt">
-																																								<a href="#">Start Now</a>
+																																								<a href="#about">Start Now</a>
 																																				</div>
-																																				<div class="read_bt">
-																																								<a href="#">Read More</a>
-																																				</div>
+
 																																</div>
 																																<div class="col-md-6">
-																																				<div class="images_1 p-2">
+																																				<div class="images_1">
 																																								<img src="{{ asset('assets/images/logo.png') }}" />
 																																				</div>
 																																</div>
@@ -144,10 +142,7 @@
 																																								user and quick to start ...
 																																				</p>
 																																				<div class="start_bt">
-																																								<a href="#">Start Now</a>
-																																				</div>
-																																				<div class="read_bt">
-																																								<a href="#">Read More</a>
+																																								<a href="https://dukaverse.storms.co.ke">Start Now</a>
 																																				</div>
 																																</div>
 																																<div class="col-md-6">
@@ -174,11 +169,9 @@
 																																								space. It all starts with ...
 																																				</p>
 																																				<div class="start_bt">
-																																								<a href="#">Start Now</a>
+																																								<a href="https://mtAa.storms.co.ke">Start Now</a>
 																																				</div>
-																																				<div class="read_bt">
-																																								<a href="#">Read More</a>
-																																				</div>
+
 																																</div>
 																																<div class="col-md-6">
 																																				<div class="images_1">
@@ -305,8 +298,8 @@
 																												<a href="#careers" class="">Careers</a><br />
 																												<a href="#vacancies" class="">Vaccancies</a><br />
 																												<a href="" class="">Services</a><br />
-                                                                                                                <a href="#values" class="">Our Values</a><br />
-                                                                                                                <a href="#difference" class="">How we make a difference</a><br />
+																												<a href="#values" class="">Our Values</a><br />
+																												<a href="#difference" class="">How we make a difference</a><br />
 																												<a href="#contact" class="">Contact</a><br />
 																												<a href="#termsandconditions" class="">Terms & Conditions</a><br />
 																								</p>
@@ -359,20 +352,20 @@
 								var i;
 								var read_more_btns = document.getElementsByClassName("read_more_btn");
 
-                                    for (i = 0; i < coll.length; i++) {
-                                    				coll[i].addEventListener("click", function(e) {
-                                                        e.preventDefault();
-                                    								this.classList.toggle("active");
-                                    								var content = this.previousElementSibling;
-                                    								if (content.style.display === "block") {
-                                    												content.style.display = "none";
-                                    												$('.read_more_btn').text("Read more");
-                                    								} else {
-                                    												content.style.display = "block";
-                                    												$('.read_more_btn').text("Read Less!");
-                                    								}
-                                    				});
-                                    }
+								for (i = 0; i < coll.length; i++) {
+												coll[i].addEventListener("click", function(e) {
+																e.preventDefault();
+																this.classList.toggle("active");
+																var content = this.previousElementSibling;
+																if (content.style.display === "block") {
+																				content.style.display = "none";
+																				$('.read_more_btn').text("Read more");
+																} else {
+																				content.style.display = "block";
+																				$('.read_more_btn').text("Read Less!");
+																}
+												});
+								}
 				</script>
 				<!-- Javascript files-->
 				<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

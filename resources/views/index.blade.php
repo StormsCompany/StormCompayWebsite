@@ -84,19 +84,19 @@
 												<h3 class="display-4  ">Our Products and Services</h3>
 								</div>
 								<div class="row d-flex justify-content-center">
-												<div class="col-lg-3 col-sm-12" data-aos="zoom-in">
+												<div class="col-lg-3 col-sm-6" data-aos="zoom-in">
 																<div class="box_clients">
 																				<img class="images_client" src="{{ asset('assets/images/dukaverse.png') }}" />
 																</div>
 																<p>DukaVerse</p>
 												</div>
-												<div class="col-lg-3 col-sm-12" data-aos="zoom-in">
+												<div class="col-lg-3 col-sm-6" data-aos="zoom-in">
 																<div class="box_clients">
 																				<img class="images_client" src="{{ asset('assets/images/mtaa.png') }}" />
 																</div>
 																<p>MtAa</p>
 												</div>
-												<div class="col-lg-3 col-sm-12" data-aos="zoom-in">
+												<div class="col-lg-3 col-sm-6" data-aos="zoom-in">
 																<div class="box_clients">
 																				<img class="images_client w-75" src="https://wevamgroupltd.storms.co.ke/assets/img/favicon.jpeg" />
 
@@ -106,19 +106,19 @@
 												</div>
 								</div>
 								<div class="row d-flex justify-content-center">
-												<div class="col-lg-3 col-sm-12" data-aos="zoom-in">
+												<div class="col-lg-3 col-sm-6" data-aos="zoom-in">
 																<div class="box_clients">
 																				<img class="images_client" src="{{ asset('assets/images/mobileapplication.png') }}" />
 																</div>
 																<p>Mobile Applications</p>
 												</div>
-												<div class="col-lg-3 col-sm-12" data-aos="zoom-in">
+												<div class="col-lg-3 col-sm-6" data-aos="zoom-in">
 																<div class="box_clients">
 																				<img class="images_client" src="{{ asset('assets/images/photography.png') }}" />
 																</div>
 																<p>Photography</p>
 												</div>
-												<div class="col-lg-3 col-sm-12" data-aos="zoom-in">
+												<div class="col-lg-3 col-sm-6" data-aos="zoom-in">
 																<div class="box_clients">
 																				<img class="images_client w-75" src="{{ asset('assets/images/hrsystem.png') }}" />
 
@@ -127,21 +127,21 @@
 												</div>
 								</div>
 								<div class="row d-flex justify-content-center">
-												<div class="col-lg-3 col-sm-12" data-aos="zoom-in">
+												<div class="col-lg-3 col-sm-6" data-aos="zoom-in">
 																<div class="box_clients">
 																				<img class="images_client w-75" src="{{ asset('assets/images/ai.jpg') }}" />
 
 																</div>
 																<p>Artificial Intelligence</p>
 												</div>
-												<div class="col-lg-3 col-sm-12" data-aos="zoom-in">
+												<div class="col-lg-3 col-sm-6" data-aos="zoom-in">
 																<div class="box_clients">
 																				<img class="images_client w-75" src="{{ asset('assets/images/webapp.png') }}" />
 
 																</div>
 																<p>Web Applications</p>
 												</div>
-												<div class="col-lg-3 col-sm-12" data-aos="zoom-in">
+												<div class="col-lg-3 col-sm-6" data-aos="zoom-in">
 																<div class="box_clients">
 																				<img class="images_client w-75" src="{{ asset('assets/images/testanalysis.png') }} " />
 
@@ -350,12 +350,12 @@
 																				<div class="carousel-inner">
 																								<div class="carousel-item active">
 																												<div class="row justify-content-center layout_padding">
-																																<div class="col-md-3 col-xl-3">
-																																				<div class="images_1">
+																																<div class="col-sm-3 col-md-3 col-xl-3">
+																																				<div class="client_image">
 																																								<img class="rounded-circle w-100 mr-auto" src="https://media.licdn.com/dms/image/C4D03AQEmJsv3UHQ4xQ/profile-displayphoto-shrink_800_800/0/1636400154887?e=1684368000&v=beta&t=BI2nXI2pcno1c_6UE1y2LzhVJ0ZgN6d7gZcOSYPnTIg" />
 																																				</div>
 																																</div>
-																																<div class="col-md-6">
+																																<div class="col-md-6 col-xl-6">
 																																				<h1 class="your_text text-dark">
 																																								Korir Amos
 																																				</h1>
@@ -374,7 +374,7 @@
 																								<div class="carousel-item ">
 																												<div class="row justify-content-center layout_padding" data-aos="zoom-in">
 																																<div class="col-md-3 col-xl-3">
-																																				<div class="images_1">
+																																				<div class="client_image">
 																																								<img class="rounded-circle w-100 mr-auto"  src="https://kiplangatsang.storms.co.ke/img/profile.jpg" />
 																																				</div>
 																																</div>
@@ -398,7 +398,7 @@
 																								<div class="carousel-item">
 																												<div class="row justify-content-center layout_padding" data-aos="flip-up">
 																																<div class="col-md-3 col-xl-3">
-																																				<div class="images_1">
+																																				<div class="client_image">
 																																								<img class="rounded-circle w-100 mr-auto" src="{{ asset('assets/images/MtAa.png') }}" />
 																																				</div>
 																																</div>
@@ -430,10 +430,10 @@
 				<!-- address section start -->
 				<div class="contact_us_section layout_padding" id="contact">
 								<div class="container">
-												<div class="row">
-																<div class="col-md-6 col-xl p-2 m-2 contact_box">
+												<div class="row layout_padding">
+																<div class="col-md-6 col-xl m-2 contact_box">
 																				<div class="col-sm">
-																								<h1 class="contact_us_text">Drop us a message with ease</h1>
+																								<h1 class="contact_us_text">Drop us a message with ease!</h1>
 																				</div>
 																				<div class="col-sm">
 																								<div class="mail_main">
