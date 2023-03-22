@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/stormsco/StormsCompany
     - /bin/cp -r * $DEPLOYPATH #copy all from root
-    - /bin/cp -R ./public/* /home/stormsco/public_html/
+    - /bin/cp ./public/* /home/stormsco/public_html
