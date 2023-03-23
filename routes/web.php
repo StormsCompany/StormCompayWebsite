@@ -33,6 +33,9 @@ Route::get('/products', function () {
     return view('products');
 })->name('products');
 
+Route::get('/privacy', function () {
+    return view('privacy');
+})->name('privacy');
 
 
 
