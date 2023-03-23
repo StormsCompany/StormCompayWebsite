@@ -70,13 +70,15 @@
 																</ul>
 																<form class=" my-2 my-lg-0">
 																				<button class="btn btn-outline-success my-2 my-sm-0">
-																							<a href="#about">GET STARTED</a>
+																								<a href="#about">GET STARTED</a>
 																				</button>
 																</form>
 																<div class="form-inline search_icon">
 																				<ul>
 																								<li>
-																												<a href="{{ route('login') }}"><img src="{{ asset('assets/images/user-icon.png') }}" /><tb>&ensp;Account</a>
+																												<a href="{{ route('login') }}"><img src="{{ asset('assets/images/user-icon.png') }}" />
+																																<tb>&ensp;Account
+																												</a>
 																								</li>
 																								{{--  <li>
 																												<a href="#"><img src="{{ asset('assets/images/bag-icon.png') }}" /></a>
@@ -383,6 +385,8 @@
 				<script src="{{ asset('assets/js/custom.js') }}"></script>
 				<!-- javascript -->
 				</script>
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116569436922792"
+								crossorigin="anonymous"></script>
 </body>
 
 </html>
