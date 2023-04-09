@@ -228,9 +228,9 @@ button {
 .header_section {
     width: 100%;
     /* float: right; */
-    background-image: url(../images/banner-bg.png);
+    /* background-image: url(../images/banner-bg.png); */
     height: auto;
-    background-color: rgb(12, 12, 170);
+    background-color: rgb(160, 160, 212);
     background-size: cover;
     background-position: 0%;
     background-repeat: no-repeat;

@@ -420,13 +420,13 @@
 				<!-- client section end -->
 				<hr>
 
-				<!-- address section start -->
+				<!-- contact section start -->
 				<div class="contact_us_section layout_padding" id="contact">
 								<div class="container">
-                                    <div class="row">
-                                        <p class="section_title display-6">Our team is always ready to support. </p>
-                                        <p class="section_title display-7"> Drop a message or visit our office.</p>
-                                    </div>
+												<div class="row">
+																<p class="section_title display-6">Our team is always ready to support. </p>
+																<p class="section_title display-7"> Drop a message or visit our office.</p>
+												</div>
 												<div class="row layout_padding">
 																<div class="col-md-6 col-xl m-2 contact_box">
 																				<div class="col-sm">
@@ -486,7 +486,7 @@
 												</div>
 								</div>
 				</div>
-				<!--  address section end -->
+				<!--  contact section end -->
 				<hr>
 				<!-- address section start -->
 				<div class="contact_us_section layout_padding" id="contact_info">

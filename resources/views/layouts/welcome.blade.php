@@ -27,8 +27,6 @@
 				<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
 								media="screen" />
-				{{--  <link rel="stylesheet" type="text/css"
-								href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  --}}
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
 								integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
 								crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -68,11 +66,8 @@
 																								<a class="nav-link" href="#contact">Contact us</a>
 																				</li>
 																</ul>
-																<form class=" my-2 my-lg-0">
-																				<button class="btn btn-outline-success my-2 my-sm-0">
-																								<a href="#about">GET STARTED</a>
-																				</button>
-																</form>
+																				<a class="btn btn-sm btn-outline-success p-2" href="#about">GET STARTED </a>
+
 																<div class="form-inline search_icon">
 																				<ul>
 																								<li>
