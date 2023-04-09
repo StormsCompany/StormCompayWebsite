@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ServiceController;
-use GuzzleHttp\Psr7\Request;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
@@ -38,7 +38,7 @@ Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $requ
 
 #Resending The Verification Email
 Route::post('/email/verification-notification', function (Request $request) {
-    request()->user()->sendEmailVerificationNotification();
+    $request->user()->sendEmailVerificationNotification();
 
     return back()->with('message', 'Verification link sent!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.resend');

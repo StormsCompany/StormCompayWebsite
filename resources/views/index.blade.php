@@ -503,7 +503,7 @@
 																												<p class="address_text1">Phone Number : +254773021841</p>
 																								</div>
 																				</div>
-																</div>
+																</div>lo
 												</div>
 								</div>
 				</div>

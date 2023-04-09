@@ -37,7 +37,7 @@
 <body>
 				<div id="app">
 								
-
+                                <?php echo $__env->make('inc.messages', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 								<main class="py-4">
 												<?php echo $__env->yieldContent('content'); ?>
 								</main>

@@ -12,26 +12,16 @@
 
 				<!-- Fonts -->
 				<link rel="dns-prefetch" href="//fonts.gstatic.com">
-				<link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
-				<!-- bootstrap css -->
-				<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}" />
-				<!-- style css -->
-				<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}" />
-				<!-- Responsive-->
-				<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}" />
+				{{--  <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">  --}}
 				<!-- gpstyle-->
-				<link rel="stylesheet" href="{{ asset('assets/css/gpstyle.css') }}" />
 				<!-- fevicon -->
 				<link rel="icon" href="{{ asset('assets/images/fevicon.png') }}" type="image/gif" />
 				<!-- Scrollbar Custom CSS -->
-				<link rel="stylesheet" href="{{ asset('assets/css/jquery.mCustomScrollbar.min.css') }}" />
+				{{--  <link rel="stylesheet" href="{{ asset('assets/css/jquery.mCustomScrollbar.min.css') }}" />  --}}
 				<!-- Tweaks for older IEs-->
-				<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
 								media="screen" />
-				{{--  <link rel="stylesheet" type="text/css"
-								href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  --}}
+
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
 								integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
 								crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -40,13 +30,69 @@
 								crossorigin="anonymous"></script>
 
 				<!-- Scripts -->
+                    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 				<link rel="stylesheet" href="{{ asset('css/main.css') }}">
-				@vite(['resources/sass/app.scss', 'resources/js/app.js'])
-
 </head>
 
 <body>
 				<div id="app">
+								<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+												<div class="container">
+																<a class="navbar-brand" href="{{ url('/') }}">
+																				{{ config('app.name', 'Storms') }}
+																</a>
+																<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+																				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+																				aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+																				<span class="navbar-toggler-icon"></span>
+																</button>
+
+																<div class="collapse navbar-collapse" id="navbarSupportedContent">
+																				<!-- Left Side Of Navbar -->
+																				<ul class="navbar-nav me-auto">
+
+																				</ul>
+
+																				<!-- Right Side Of Navbar -->
+																				<ul class="navbar-nav ms-auto">
+																								<!-- Authentication Links -->
+																								@guest
+																												@if (Route::has('login'))
+																																<li class="nav-item">
+																																				<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+																																</li>
+																												@endif
+
+																												@if (Route::has('register'))
+																																<li class="nav-item">
+																																				<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+																																</li>
+																												@endif
+																								@else
+																												<li class="nav-item dropdown">
+																																<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+																																				data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+																																				{{ Auth::user()->name }}
+																																</a>
+
+																																<div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+																																				<a class="dropdown-item" href="{{ route('logout') }}"
+																																								onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+																																								{{ __('Logout') }}
+																																				</a>
+
+																																				<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+																																								@csrf
+																																				</form>
+																																</div>
+																												</li>
+																								@endguest
+																				</ul>
+																</div>
+												</div>
+								</nav>
+                                @include('inc.messages')
 								<main class="py-4">
 												@yield('content')
 								</main>
