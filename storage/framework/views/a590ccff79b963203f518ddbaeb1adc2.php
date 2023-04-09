@@ -490,7 +490,7 @@
 												<div class="row">
 																<div class="col-md col-xl">
 																				<div class="col-sm">
-																								<h1 class="contact_us_text text-white">Our contacts</h1>
+																								<h1 class="contact_us_text text-dark">Our contacts</h1>
 																				</div>
 																				<div class="row ">
 																								<div class="col-md-6 col-xl">
@@ -516,8 +516,8 @@
 								});
 
 								function sendMessage() {
-                                    $('#guest_success').text("");
-                                    $('#guest_error').text("");
+												$('#guest_success').text("");
+												$('#guest_error').text("");
 												var email = $('#guestemail').val();
 												var name = $('#guestname').val();
 												var message = $('#guestmessage').val();
