@@ -14,26 +14,25 @@ class GuestController extends BaseController
     public function index(Request $request)
     {
         # code...
-      $result =  $this->sendGuestEmail($request->name,$request->email,$request->message);
+        $result =  $this->sendGuestEmail($request->name, $request->email, $request->message);
 
-      if( $result)
-      return $this->sendResponse("success",$result);
-      else
-      return $this->sendError('error',"Could not send this mesage");
+        if ($result)
+            return $this->sendResponse("success", $result);
+        else
+            return $this->sendError('error', "Could not send this mesage");
     }
 
-    public function sendGuestEmail($name,$email, $message)
+    public function sendGuestEmail($name, $email, $message)
     {
         # code...
-     try{
-        $guestMail =  new GuestMail($name,$email,$message);
-        Mail::to('stormsco@storms.co.ke')->send($guestMail);
-        return "The message has been sent";
-
-     }catch(Exception $e){
-        $e->getMessage();
-        info($e->getMessage());
-        return false;
-     }
+        try {
+            $guestMail =  new GuestMail($name, $email, $message);
+            Mail::to('stormcompanies@gmail.com')->send($guestMail);
+            return "The message has been sent";
+        } catch (Exception $e) {
+            $e->getMessage();
+            info($e->getMessage());
+            return false;
+        }
     }
 }

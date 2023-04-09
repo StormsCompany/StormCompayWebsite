@@ -66,7 +66,7 @@
 																								<a class="nav-link" href="#contact">Contact us</a>
 																				</li>
 																</ul>
-																				<a class="btn btn-sm btn-outline-success p-2" href="#about">GET STARTED </a>
+																<a class="btn btn-sm btn-outline-success p-2" href="#about">GET STARTED </a>
 
 																<div class="form-inline search_icon">
 																				<ul>
@@ -110,7 +110,7 @@
 																																				</p>
 
 																																				<div class="start_bt">
-																																								<a href="#about">Start Now</a>
+																																								<a href="{{ route('register') }}">Start Now</a>
 																																				</div>
 
 																																</div>

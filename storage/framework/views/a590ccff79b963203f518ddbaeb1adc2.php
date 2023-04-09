@@ -10,7 +10,7 @@
 																</div>
 																<div class="col-md-6">
 																				<h1 class="live_text">About Us</h1>
-																				<h5 class="lorem_text">
+																				<h5 class="bold_24">
 																								<strong> Welcome to Storms Company!</strong>
 																				</h5>
 																				<p>
@@ -64,10 +64,6 @@
 								</div>
 				</div>
 				<!-- about section end -->
-				<!-- product section start -->
-				
-				<hr>
-				<!-- product section end -->
 				<!-- =============portfolio section-->
 				<div class="services_section" data-aos="zoom-in" id="services">
 								<div class="row services_section section_title mt-4">
@@ -155,34 +151,34 @@
 																				<h3 class="live_text">
 																								How we make a difference
 																				</h3>
-																				<p data-aos="fade-up" class="lorem_text"><i class="fa-solid fa-eye-dropper"></i> Customers </p>
+																				<p data-aos="fade-up" class="bold_24"><i class="fa-solid fa-eye-dropper"></i> Customers </p>
 																				<p data-aos="fade-up">We ensure quality engagement with our customers to enable us to feel their desires
 																								and meet their
 																								needs. This customer centered approach reduces delivery times and ensures customer satisfaction</p>
 
-																				<p data-aos="fade-up" class="lorem_text"><i class="fa-solid fa-eye-dropper"></i> Mobile applications
+																				<p data-aos="fade-up" class="bold_24"><i class="fa-solid fa-eye-dropper"></i> Mobile applications
 																				</p>
 																				<p data-aos="fade-up">Mobile applications are the new game changers for businesses to penetrate the
 																								market and reach
 																								customers effectively. We make the process of development fast and easy to ensure that you can
 																								compete on an advantaged lattitude in the market space.</p>
-																				<p data-aos="fade-up" class="lorem_text"><i class="fa-solid fa-eye-dropper"></i> Web, Internet and
+																				<p data-aos="fade-up" class="bold_24"><i class="fa-solid fa-eye-dropper"></i> Web, Internet and
 																								Security</p>
 																				<p data-aos="fade-up">Web targeted hacking and unauthorised access could be prevented by ensuring
 																								effective testing and
 																								safe integration to production. Meet our consultants to ensure that your customer data is safe and
 																								secure within the web space.</p>
-																				<p data-aos="fade-up" class="lorem_text"><i class="fa-solid fa-eye-dropper"></i> Human Resource</p>
+																				<p data-aos="fade-up" class="bold_24"><i class="fa-solid fa-eye-dropper"></i> Human Resource</p>
 																				<p data-aos="fade-up">Less paperwork, easy processing and employee accountabilty is what we stand for.
 																								The who, when, where
 																								and why of employee accountability can be resolved by our human resource applications. Make a call
 																								or drop a message now.
 																				</p>
-																				<p data-aos="fade-up" class="lorem_text"><i class="fa-solid fa-eye-dropper"></i> Environment</p>
+																				<p data-aos="fade-up" class="bold_24"><i class="fa-solid fa-eye-dropper"></i> Environment</p>
 																				<p data-aos="fade-up">Clean energy, clean working environment and conducing working conditions are on
 																								our top priority. We
 																								partner with several organisations, parastatals and cooporations that share the same vision.</p>
-																				<p data-aos="fade-up" class="lorem_text"><i class="fa-solid fa-eye-dropper"></i> Society</p>
+																				<p data-aos="fade-up" class="bold_24"><i class="fa-solid fa-eye-dropper"></i> Society</p>
 																				<p data-aos="fade-up">Having the front row on data about the impact of technology on the comunity and
 																								society places us at
 																								an advantageous position to root for positive impacts towards the society and nation as a whole. We
@@ -310,19 +306,19 @@
 				<!-- contact section  -->
 				<div data-aos="zoom-in" class="contact_section layout_padding">
 								<div class="container">
-												<h1 class="check_text">
+												<h1 class="check_text mt-3">
 																Contact us now
 												</h1>
 												<div class="contact_section2">
-																<div class="addres_main">
+																<div class="addres_main p-3">
 																				<div class="input_bg">
 																								<h3 class="fact_text">
 																												Its quick and easy to get to us. Just click to get started.
 																								</h3>
-																								<input type="text" class="address_text" placeholder="Click on the button to get started"
-																												name="text" disabled />
+																								<input onclick="#contact" type="text" class="address_text"
+																												placeholder="Click on the button to contact us" name="text" disabled />
 																								<a href="#contact" type="button" class="get_bt">
-																												GET STARTED
+																												CONCTACT US
 																								</a>
 																				</div>
 																</div>
@@ -520,26 +516,31 @@
 								});
 
 								function sendMessage() {
+                                    $('#guest_success').text("");
+                                    $('#guest_error').text("");
 												var email = $('#guestemail').val();
 												var name = $('#guestname').val();
 												var message = $('#guestmessage').val();
+												if (email.trim() != "" && name.trim() != "" && message.trim() != "") {
+																axios.post('/api/guest/message', {
+																								name: name,
+																								email: email,
+																								message: message
+																				})
+																				.then(function(response) {
+																								console.log(response.data);
+																								/// alert(response.data.message);
+																								$('#guest_success').text(response.data.message);
+																				})
+																				.catch(function(error) {
+																								console.log(error);
+																								$('#guest_error').text("Could not send message");
+																				});
+												} else {
+																$('#guest_error').text("Fill in all the fields");
+												}
 
 
-
-												axios.post('/api/guest/message', {
-																				name: name,
-																				email: email,
-																				message: message
-																})
-																.then(function(response) {
-																				console.log(response.data);
-																				/// alert(response.data.message);
-																				$('#guest_success').text(response.data.message);
-																})
-																.catch(function(error) {
-																				console.log(error);
-																				$('#guest_error').text("Could not send message");
-																});
 								}
 				</script>
 <?php $__env->stopSection(); ?>
