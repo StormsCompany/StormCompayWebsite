@@ -18,7 +18,7 @@ class ServiceMiddleware
     {
         $user = User::where('id', auth()->id())->first();
 
-        if ($user->has('services')) {
+        if (count($user->services()->get()) > 0) {
             return $next($request);
         }
 

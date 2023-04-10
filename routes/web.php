@@ -48,9 +48,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware(['auth', 'verified']);
 
 
-
-Route::middleware(['service',])->group(
-    function () {
-        Route::resource('services', ServiceController::class);
-    }
-);
+Route::resource('services', ServiceController::class);

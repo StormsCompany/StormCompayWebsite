@@ -21,6 +21,7 @@ class ServiceController extends BaseController
     {
         # code...
 
+        $this->middleware('service');
         $services = $this->user()->services()->orderBy('created_at', 'DESC')->get();
         return view('service.index', compact('services'));
     }
