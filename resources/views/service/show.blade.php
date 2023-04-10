@@ -10,15 +10,15 @@
 
 								<div class="col-md col-xl">
 												<div class="item">
-																<a href="{{ route('services.index') }}" class="btn col-md-1 col-xl-1 btn-primary p-3 m-3 rounded-pill ">
+																<a href="{{ route('services.index') }}" class="btn btn-sm col-md-1 col-xl-1 btn-primary m-3 rounded-pill ">
 																				Back <i class="fa fa-eye  mx-auto"></i>
 																</a>
 																<a href="{{ route('services.edit', ['service'=>$service->id]) }}"
-																				class="btn col-md-1 col-xl-1 btn-info p-3 m-3 rounded-pill ">
+																				class="btn btn-sm col-md-1 col-xl-1 btn-info m-3 rounded-pill ">
 																				Edit <i class="fa fa-eye  mx-auto"></i>
 																</a>
 																<a onclick="document.getElementById('service-delete-form').submit();"
-																				class="btn col-md-1 col-xl-1 btn-secondary p-3 m-3 rounded-pill ">
+																				class="btn btn-sm col-md-1 col-xl-1 btn-danger m-3 rounded-pill ">
 																				Destroy <i class="fa fa-eye mx-auto"></i>
 																				<div class="d-none">
 																								<form action="{{ route('services.destroy', ['service'=>$service->id]) }}" method="POST"

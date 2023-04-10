@@ -10,12 +10,15 @@
 
 								<div class="col-md col-xl">
 												<div class="item p-5">
-																<a href="{{ route('services.index') }}" class="btn col-md-2 col-xl-2 btn-primary p-3 m-3 rounded-pill ">
-																				View requests <i class="fa fa-eye  mx-auto"></i>
-																</a>
-																<a href="{{ route('services.create') }}" class="btn col-md-2 col-xl-2 btn-secondary p-3 m-3 rounded-pill ">
-																				Add another <i class="fa fa-eye  mx-auto"></i>
-																</a>
+																@if (count($services) > 0)
+																				<a href="{{ route('services.index') }}" class="btn btn-sm col-md-2 col-xl-2 btn-primary p-1 m-3 rounded-pill ">
+																								View requests <i class="fa fa-eye  mx-auto"></i>
+																				</a>
+																				<a href="{{ route('services.create') }}"
+																								class="btn btn-sm col-md-2 col-xl-2 btn-secondary p-1 m-3 rounded-pill ">
+																								<i class="fa fa-plus  mx-auto"></i> Add another
+																				</a>
+																@endif
 																<div class="row">
 																				@forelse ($services as $service)
 																								<div class="col-md-4 col-xl-4 m-2">
@@ -39,7 +42,7 @@
 																																												@endif
 																																								</div>
 																																								<div class="col">
-																																												<a class="btn btn-outline-success rounded-pill ml-3"
+																																												<a class="btn btn-sm btn-outline-success rounded-pill ml-3"
 																																																href="{{ route('services.show', ['service' => $service->id]) }}">
 																																																View <i class="fa fa-eye"></i></a>
 																																								</div>
@@ -49,13 +52,13 @@
 																								</div>
 																				@empty
 																								<div class="col-md-8 col-xl-7 mx-auto">
-																												<div class="item">
+																												<div>
 																																<label class="control-label">You have made no request</label>
 																																<br>
 																																<div class="row justify-content-center">
 																																				<a href="{{ route('services.create') }}"
-																																								class="btn col-md-3 col-xl-3 btn-secondary p-3 m-3 rounded-pill ">
-																																								Add another <i class="fa fa-eye  mx-auto"></i>
+																																								class="btn btn-sm col-md-3 col-xl-3 btn-info p-1 m-3 rounded-pill ">
+																																								<i class="fa fa-pen  mx-auto"></i> Create one
 																																				</a>
 																																</div>
 																																<br>
