@@ -11,7 +11,8 @@
 								<div class="col-md col-xl">
 												<div class="item p-5">
 																@if (count($services) > 0)
-																				<a href="{{ route('services.index') }}" class="btn btn-sm col-md-2 col-xl-2 btn-primary p-1 m-3 rounded-pill ">
+																				<a href="{{ route('services.index') }}"
+																								class="btn btn-sm col-md-2 col-xl-2 btn-primary p-1 m-3 rounded-pill ">
 																								View requests <i class="fa fa-eye  mx-auto"></i>
 																				</a>
 																				<a href="{{ route('services.create') }}"
@@ -53,12 +54,15 @@
 																				@empty
 																								<div class="col-md-8 col-xl-7 mx-auto">
 																												<div>
-																																<label class="control-label">You have made no request</label>
+
+																																<div class="d-flex justify-content-center">
+																																				<label class="control-label">You have made no service request</label>
+																																</div>
 																																<br>
 																																<div class="row justify-content-center">
 																																				<a href="{{ route('services.create') }}"
 																																								class="btn btn-sm col-md-3 col-xl-3 btn-info p-1 m-3 rounded-pill ">
-																																								<i class="fa fa-pen  mx-auto"></i> Create one
+																																								<i class="fa fa-plus  mx-auto"></i> Create one
 																																				</a>
 																																</div>
 																																<br>
