@@ -388,7 +388,7 @@
 																																<div class="col-md-3 col-xl-3">
 																																				<div class="client_image">
 																																								<img class="rounded-circle w-100 mr-auto"
-																																												src="<?php echo e(asset('assets/images/MtAa.png')); ?>" />
+																																												src="<?php echo e(asset('assets/images/mtaa.png')); ?>" />
 																																				</div>
 																																</div>
 																																<div class="col-md-6">
