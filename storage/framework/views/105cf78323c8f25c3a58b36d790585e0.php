@@ -4,13 +4,13 @@
 <head>
 				<!-- basic -->
 				<meta charset="utf-8" />
-				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<!-- mobile metas -->
-				<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+				<meta name="name" content="<?php echo e(config('app.name')); ?>">
+				<meta name="url" content="<?php echo e(config('app.url', 'https://storms.co.ke')); ?>">
+				<meta name="description" content="<?php echo e(config('app.description', 'Your Tech Solution')); ?>">
+				<meta name="author" content="<?php echo e(config('app.name', 'STORMS')); ?>">
 				<!-- site metas -->
-				<title>Storms | Your Tech Solution</title>
+				<title><?php echo e(config('app.name', 'STORMS')); ?> | Your Tech Solution</title>
 				<!-- bootstrap css -->
 				<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/bootstrap.min.css')); ?>" />
 				<!-- style css -->
