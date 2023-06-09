@@ -7,7 +7,11 @@
 // Bootstrap
 @import "bootstrap/scss/bootstrap";
 
-
+@viewport {
+    zoom: 1;
+    min-zoom: 100%;
+    max-zoom: 1;
+}
 
 body {
     /* background-color: #d2d5db!important; */
@@ -18,12 +22,11 @@ body {
     line-height: 1.80857;
     font-weight: 200;
     /*overflow-x: auto;*/
-     overflow-x: hidden;
+    overflow-x: hidden;
     margin: 0;
     /* padding: -10px; */
-     width:fit-content;
+    width: fit-content;
 }
-
 
 .tab button :hover {
     color: rgb(158, 61, 218) !important;
@@ -31,5 +34,5 @@ body {
 
 .tab .active {
     color: rgb(158, 61, 218) !important;
-    background-color: rgb(243, 199, 199)!important;
+    background-color: rgb(243, 199, 199) !important;
 }
