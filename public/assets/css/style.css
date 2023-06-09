@@ -34,11 +34,11 @@ body {
         sans-serif;
     line-height: 1.80857;
     font-weight: 200;
-    overflow-x: auto;
-    /* overflow-x: hidden; */
+    /*overflow-x: auto;*/
+     overflow-x: hidden;
     margin: 0;
     /* padding: -10px; */
-    /* width: 100%; */
+     width:fit-content;
 }
 
 a {
@@ -227,7 +227,7 @@ button {
 }
 
 .header_section {
-    width: 100%;
+    /* width: 100%; */
     /* float: right; */
     /* background-image: url(../images/banner-bg.png); */
     height: auto;
