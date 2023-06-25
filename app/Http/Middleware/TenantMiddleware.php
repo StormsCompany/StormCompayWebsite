@@ -47,8 +47,9 @@ class TenantMiddleware
     private function extractSubdomain($host)
     {
         $parsedUrl = parse_url($host);
-        dd($parsedUrl);
+
         $subdomain = explode('.', $parsedUrl['host'])[0];
+        dd($subdomain);
 
         return $subdomain;
     }
