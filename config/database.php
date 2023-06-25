@@ -93,6 +93,16 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'tenant1' => [
+            // Connection for Tenant 1
+            'driver' => 'mysql',
+            'host' => env('TENANT1_DB_HOST', '127.0.0.1'),
+            'database' => env('TENANT1_DB_DATABASE', 'forge'),
+            'username' => env('TENANT1_DB_USERNAME', 'forge'),
+            'password' => env('TENANT1_DB_PASSWORD', ''),
+            // ...
+        ],
+
     ],
 
     /*

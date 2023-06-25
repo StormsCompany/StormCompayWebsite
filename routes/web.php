@@ -19,7 +19,7 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 Route::get('/', function () {
     return view('index');
-})->name('welcome');
+})->name('welcome')->middleware('tenant');
 
 Route::get('/privacy', function () {
     return view('privacy');
