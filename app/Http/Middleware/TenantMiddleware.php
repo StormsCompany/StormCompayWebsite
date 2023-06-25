@@ -30,18 +30,20 @@ class TenantMiddleware
 
     private function identifyTenant($host)
     {
-        $subdomain = $this->extractSubdomain($host);
+       // Extract the subdomain from the host
+       $subdomain = Str::before($host, '.');
 
-        // Use the subdomain to determine the tenant's database connection name
-        $tenantConnection = 'tenant_' . $subdomain;
+       // Use the subdomain to determine the tenant's database connection name
+       $tenantConnection = 'tenant_' . $subdomain;
 
-        // Check if the tenant connection exists in the database configuration
-        if (!in_array($tenantConnection, array_keys(config('database.connections')))) {
-            // Handle the scenario where the subdomain doesn't match any tenant
-            // You can throw an exception, redirect, or take any appropriate action
-        }
+       dd($tenantConnection);
+       // Check if the tenant connection exists in the database configuration
+       if (!in_array($tenantConnection, array_keys(config('database.connections')))) {
+           // Handle the scenario where the subdomain doesn't match any tenant
+           // You can throw an exception, redirect, or take any appropriate action
+       }
 
-        return $tenantConnection;
+       return $tenantConnection;
     }
 
     private function extractSubdomain($host)
