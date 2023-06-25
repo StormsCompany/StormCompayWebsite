@@ -19,7 +19,7 @@ class TenantMiddleware
     {
         // dd($request->user()->email);
         // Identify the current tenant based on the request (e.g., subdomain, API key, etc.)
-        $tenant = $this->identifyTenant($request);
+        $tenant = $this->identifyTenant($request->getHost());
 
         // $tenant = $this->setTenantDatabase();
         // Switch the database connection to the tenant's database
