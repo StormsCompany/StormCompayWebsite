@@ -19,7 +19,6 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 */
 
 Route::get('/', function () {
-    //return User::all();
     return view('index');
 })->name('welcome');
 
