@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ServiceController;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -18,8 +19,9 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 */
 
 Route::get('/', function () {
+    return User::all();
     return view('index');
-})->name('welcome')->middleware('tenant');
+})->name('welcome');
 
 Route::get('/privacy', function () {
     return view('privacy');
