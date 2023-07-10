@@ -30,7 +30,7 @@
 								crossorigin="anonymous"></script>
 
 				<!-- Scripts -->
-                    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+                    {{--  @vite(['resources/sass/app.scss', 'resources/js/app.js'])  --}}
 				<link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
 
