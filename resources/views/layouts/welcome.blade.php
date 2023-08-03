@@ -31,8 +31,11 @@
 								integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
 								crossorigin="anonymous" referrerpolicy="no-referrer" />
 				<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116569436922792"
+								crossorigin="anonymous"></script>
 				<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
 								crossorigin="anonymous"></script>
+
 				@vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
@@ -443,9 +446,7 @@
 				<script src="{{ asset('assets/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
 				<script src="{{ asset('assets/js/custom.js') }}"></script>
 				<!-- javascript -->
-				</script>
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116569436922792"
-								crossorigin="anonymous"></script>
+
 </body>
 
 </html>
