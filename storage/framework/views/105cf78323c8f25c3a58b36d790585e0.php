@@ -6,11 +6,11 @@
 				<meta charset="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 				<meta name="name" content="<?php echo e(config('app.name')); ?>">
-				<meta name="url" content="<?php echo e(config('app.url', 'https://storms.co.ke')); ?>">
+				<meta name="url" content="<?php echo e(config('app.url', 'https://ceroisoft.com')); ?>">
 				<meta name="description" content="<?php echo e(config('app.description', 'Your Tech Solution')); ?>">
-				<meta name="author" content="<?php echo e(config('app.name', 'STORMS')); ?>">
+				<meta name="author" content="<?php echo e(config('app.name', 'CEROISOFT')); ?>">
 				<!-- site metas -->
-				<title><?php echo e(config('app.name', 'STORMS')); ?> | Your Tech Solution</title>
+				<title><?php echo e(config('app.name', 'CEROISOFT')); ?> | Your Tech Solution</title>
 				<!-- bootstrap css -->
 				<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/bootstrap.min.css')); ?>" />
 				<!-- style css -->
@@ -31,13 +31,16 @@
 								integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
 								crossorigin="anonymous" referrerpolicy="no-referrer" />
 				<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116569436922792"
+								crossorigin="anonymous"></script>
 				<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
 								crossorigin="anonymous"></script>
+
 				<?php echo app('Illuminate\Foundation\Vite')(['resources/sass/app.scss', 'resources/js/app.js']); ?>
 </head>
 
 <body>
-				<div class="container-fluid">
+				<div class="container-fluid mx-0" >
 								<div class="row">
 												<!-- header section start -->
 												<div class="header_section">
@@ -94,7 +97,7 @@
 																																				<div class="row">
 																																								<div class="col-md-6">
 																																												<h1 class="your_text">
-																																																Storms Company
+																																																Ceroisoft
 																																												</h1>
 																																												<h2 class="Shows_text">
 																																																Tech and IT Solutions
@@ -138,7 +141,7 @@
 																																																user and quick to start ...
 																																												</p>
 																																												<div class="start_bt">
-																																																<a href="https://dukaverse.storms.co.ke">Start Now</a>
+																																																<a href="https://dukaverse.ceroisoft.com">Start Now</a>
 																																												</div>
 																																								</div>
 																																								<div class="col-md-6">
@@ -165,7 +168,7 @@
 																																																space. It all starts with ...
 																																												</p>
 																																												<div class="start_bt">
-																																																<a href="https://mtAa.storms.co.ke">Start Now</a>
+																																																<a href="https://mtAa.ceroisoft.com">Start Now</a>
 																																												</div>
 
 																																								</div>
@@ -193,7 +196,7 @@
 																																																to the stars.
 																																												</p>
 																																												<div class="start_bt">
-																																																<a href="https://sgnh.storms.co.ke">Start Now</a>
+																																																<a href="https://sgnh.ceroisoft.com">Start Now</a>
 																																												</div>
 
 																																								</div>
@@ -297,12 +300,12 @@
 																																				<img class="w-50" src="<?php echo e(asset('assets/images/footer-logo.png')); ?>" />
 																																</div>
 																																<p class="footer_lorem_text">
-																																				STORMS | YOUR TECH SOLUTION
+																																				CEROISOFT | YOUR TECH SOLUTION
 																																				<br>
 																																</p>
 																																<p class="footer_lorem_text">
 																																				Find the best customer service from us. We work and involve our customers
-																																				throughought
+																																				throughout
 																																				the
 																																				development process.
 																																				We also ensure timely delivery that exceeds your expectation.
@@ -316,7 +319,7 @@
 																																				possible.
 																																</p>
 																																<p class="footer_lorem_text">
-																																				<small>Email: stormsco@storms.co.ke</small>
+																																				<small>Email: ceroisoft@ceroisoft.com</small>
 																																				<br>
 																																				Call : +254714680763
 																																</p>
@@ -337,9 +340,9 @@
 																												<div class="col-lg-3 col-sm-6">
 																																<h1 class="customer_text">Solutions</h1>
 																																<p class="footer_lorem_text">
-																																				<a href="https://MtAa.storms.co.ke" class="">MtAa</a><br />
-																																				<a href="https://dukaverse.storms.co.ke" class="">DukaVerse</a><br />
-																																				<a href="https://sngh.storms.co.ke" class="">SNGH</a><br />
+																																				<a href="https://MtAa.ceroisoft.com" class="">MtAa</a><br />
+																																				<a href="https://dukaverse.ceroisoft.com" class="">DukaVerse</a><br />
+																																				<a href="https://sngh.ceroisoft.com" class="">SNGH</a><br />
 																																</p>
 																																<div class="social_icon">
 																																				<ul>
@@ -372,7 +375,7 @@
 																								<div class="border"></div>
 																								<p class="copyright_text">
 																												2023 All Rights Reserved. Design by
-																												<a href="kiplangatsang.storms.co.ke">Storms Company</a>
+																												<a href="kiplangatsang.ceroisoft.com">Ceroisoft Company</a>
 																								</p>
 																				</div>
 																</div>
@@ -416,9 +419,7 @@
 				<script src="<?php echo e(asset('assets/js/jquery.mCustomScrollbar.concat.min.js')); ?>"></script>
 				<script src="<?php echo e(asset('assets/js/custom.js')); ?>"></script>
 				<!-- javascript -->
-				</script>
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116569436922792"
-								crossorigin="anonymous"></script>
+
 </body>
 
 </html>

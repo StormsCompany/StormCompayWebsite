@@ -1,11 +1,11 @@
 // Fonts
-@import url("https://fonts.bunny.net/css?family=Nunito");
+@import url('https://fonts.bunny.net/css?family=Nunito');
 
 // Variables
-@import "variables";
+@import 'variables';
 
 // Bootstrap
-@import "bootstrap/scss/bootstrap";
+@import 'bootstrap/scss/bootstrap';
 
 @viewport {
     zoom: 1;
@@ -25,7 +25,6 @@ body {
     /*overflow-x: auto;*/
     overflow-x: hidden;
     margin: 0;
-    /* padding: -10px; */
     padding: auto;
 }
 
@@ -37,3 +36,9 @@ body {
     color: rgb(158, 61, 218) !important;
     background-color: rgb(243, 199, 199) !important;
 }
+
+
+.nav-link{
+    color: white;
+}
+
