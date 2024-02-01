@@ -3,4 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/ceroisoft/ceroisoft
     - /bin/cp -r * $DEPLOYPATH #copy all from root
-    - /bin/cp -R /home/ceroisoft/ceroisoft/public /home/ceroisoft/public_html
+    - cp -R /home/ceroisoft/ceroisoft/public/assets /home/ceroisoft/public_html/assets
+    - cp -R /home/ceroisoft/ceroisoft/public/build /home/ceroisoft/public_html/build
