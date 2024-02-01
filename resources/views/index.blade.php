@@ -364,10 +364,9 @@
 																																												timelines. I will forever be greatfull to this company.
 																																								</p>
 																																				</div>
-
 																																</div>
 																												</div>
-																												<div class="carousel-item ">
+																												<div class="carousel-item">
 																																<div class="row justify-content-center layout_padding" data-aos="zoom-in">
 																																				<div class="col-md-3 col-xl-3">
 																																								<div class="client_image">
