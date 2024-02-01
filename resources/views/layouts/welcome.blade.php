@@ -5,10 +5,10 @@
 				<!-- basic -->
 				<meta charset="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-				<meta name="name" content="{{ config('app.name') }}">
+				<meta name="name" content="{{ config('app.name') ,'CEROISOFT LTD' }} ">
 				<meta name="url" content="{{ config('app.url', 'https://ceroisoft.com') }}">
 				<meta name="description" content="{{ config('app.description', 'Your Tech Solution') }}">
-				<meta name="author" content="{{ config('app.name', 'CEROISOFT') }}">
+				<meta name="author" content="{{ config('app.name', 'CEROISOFT LTD')  }}">
 				<!-- site metas -->
 				<title>{{ config('app.name', 'CEROISOFT') }} | Your Tech Solution</title>
 				<!-- style css -->
