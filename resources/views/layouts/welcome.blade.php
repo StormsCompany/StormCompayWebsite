@@ -36,7 +36,6 @@
 
 				@vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-
 <body>
 				{{--  hero section  --}}
 				<div class="container-fluid  mx-0 py-0 px-0">
