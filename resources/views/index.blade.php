@@ -526,7 +526,8 @@
 																				axios.post('/api/guest/message', {
 																												name: name,
 																												email: email,
-																												message: message
+																												message: message,
+                                                                                                                receiver: "info@ceroisoft.com"
 																								})
 																								.then(function(response) {
 																												console.log(response.data);

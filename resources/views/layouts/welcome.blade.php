@@ -80,7 +80,7 @@
 																												<div class="row mr-auto float-right">
 																																<ul>
 																																				<li class="nav-link">
-																																								<a class="btn btn-outline-info rounded-pill" href="{{ route('login') }}"><img
+																																								<a class="btn btn-outline-info rounded-pill" href="#"><img
 																																																src="{{ asset('assets/images/user-icon.png') }}" />
 																																												<tb>&ensp;Sign In
 																																								</a>
@@ -224,7 +224,7 @@
 																				</div>
 																				<div class="banner_section_2">
 																								<div class="row">
-																												<div class="col-lg-4 col-sm-12">
+																												<div class="col-lg-4 col-sm-12 mt-2">
 																																<div class="box_main">
 																																				<div class="dukaverse_icon"></div>
 																																				<h4 class="broadband_text">
@@ -244,7 +244,7 @@
 																																				</p>
 																																</div>
 																												</div>
-																												<div class="col-lg-4 col-sm-12">
+																												<div class="col-lg-4 col-sm-12 mt-2">
 																																<div class="box_main">
 																																				<div class="mtaa_icon"></div>
 																																				<h4 class="broadband_text">MtAa</h4>
@@ -262,7 +262,7 @@
 																																				</p>
 																																</div>
 																												</div>
-																												{{--  <div class="col-lg-4 col-sm-12">
+																												{{--  <div class="col-lg-4 col-sm-12 mt-2">
                                                                                                 <div class="box_main">
                                                                                                                 <div class="internet_icon2"></div>
                                                                                                                 <h4 class="broadband_text">
@@ -285,7 +285,7 @@
                                                                                                                 </p>
                                                                                                 </div>
                                                                                 </div>  --}}
-																												<div class="col-lg-4 col-sm-12">
+																												<div class="col-lg-4 col-sm-12 mt-2">
 																																<div class="box_main">
 																																				<div class="internet_icon2"></div>
 																																				<h4 class="broadband_text">
@@ -342,9 +342,13 @@
 																								possible.
 																				</p>
 																				<p class="footer_lorem_text">
-																								<small>Email: ceroisoft@ceroisoft.com</small>
+																								<small>Email: support@ceroisoft.com</small>
+                                                                                                <br>
+                                                                                                <small>Email: info@ceroisoft.com</small>
+                                                                                                <br>
+																								Call : +254 796 642 641
 																								<br>
-																								Call : +254714680763
+																								Call : +254 714 680 763
 																				</p>
 																</div>
 																<div class="col-lg-3 col-sm-6">

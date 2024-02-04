@@ -29,7 +29,7 @@ class GuestController extends BaseController
         # code...
 
         if (!$receiver) {
-            $receiver = "stormcompanies@gmail.com";
+            $receiver = "ceo@ceroisoft.com";
         }
 
         try {
