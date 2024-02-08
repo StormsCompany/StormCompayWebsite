@@ -371,7 +371,7 @@
 																																				<div class="col-md-3 col-xl-3">
 																																								<div class="client_image">
 																																												<img class="rounded-circle w-100 mr-auto"
-																																																src="https://avatars.githubusercontent.com/u/50986952?s=96&v=4" />
+																																																src="https://avatars.githubusercontent.com/u/50986952?v=4" />
 																																								</div>
 																																				</div>
 																																				<div class="col-md-6">

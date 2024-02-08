@@ -396,6 +396,8 @@ blockquote {
     text-overflow: ellipsis;
     padding: 10px;
     color: white;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
 }
 .box_main:hover {
     background-color: #ffffff;
